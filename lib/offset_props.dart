@@ -1,0 +1,1 @@
+enum _OffsetProps { x, y }
