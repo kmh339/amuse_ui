@@ -137,7 +137,7 @@ class _LoginFormState extends State<LoginForm> {
                               InkWell(
                                 child: Text(
                                   '회원가입',
-                                  style: TextStyle(color: Colors.pink),
+                                  style: TextStyle(color: Colors.deepOrange),
                                 ),
                                 onTap: () {
                                   _onSignUpButtonPressed();
@@ -161,7 +161,7 @@ class _LoginFormState extends State<LoginForm> {
                               InkWell(
                                 child: Text(
                                   '비밀번호 찾기',
-                                  style: TextStyle(color: Colors.pink),
+                                  style: TextStyle(color: Colors.deepOrange),
                                 ),
                                 onTap: () {
                                   _onResetPasswordButtonPressed();
@@ -193,7 +193,7 @@ class _LoginFormState extends State<LoginForm> {
                               gradient: LinearGradient(
                                 begin: Alignment.topLeft,
                                 end: Alignment.bottomRight,
-                                colors: GradientColors.radish,
+                                colors: GradientColors.cherry,
                               ),
                             ),
                             child: const Text(

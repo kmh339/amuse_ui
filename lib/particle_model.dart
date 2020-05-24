@@ -69,7 +69,7 @@ class ParticlePainter extends CustomPainter {
         animation.get<double>(_OffsetProps.x) * size.width,
         animation.get<double>(_OffsetProps.y) * size.height,
       );
-      canvas.drawCircle(position, size.width * 0.2 * particle.size, paint);
+      canvas.drawCircle(position, size.width * 0.15 * particle.size, paint);
     });
   }
 
