@@ -1,6 +1,7 @@
 import 'package:amuseui/animated_background.dart';
 import 'package:amuseui/fade_in.dart';
 import 'package:amuseui/particles.dart';
+import 'package:amuseui/splash.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:flutter_form_builder/flutter_form_builder.dart';
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: LoginForm(),
+      home: Splash(),
     );
   }
 }
