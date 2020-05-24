@@ -74,8 +74,8 @@ class _LoginFormState extends State<LoginForm> {
             child: Container(
               decoration: BoxDecoration(
                   gradient: LinearGradient(begin: Alignment.topLeft, end: Alignment.bottomRight, colors: [
-                Colors.yellow[100],
-                Colors.white,
+                Colors.black87,
+                Colors.black,
               ])),
             ),
           ),
@@ -97,6 +97,8 @@ class _LoginFormState extends State<LoginForm> {
                         2,
                         FormBuilderTextField(
                           attribute: 'email',
+                          cursorColor: Colors.white70,
+                          style: TextStyle(color: Colors.white70),
                           decoration: textInputDecoration('Email', Icon(Icons.email), Colors.deepOrange),
                           validators: [
                             FormBuilderValidators.required(errorText: '이메일을 입력해야 합니다.'),
@@ -131,11 +133,11 @@ class _LoginFormState extends State<LoginForm> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
-                              const Text('아직 회원이 아니신가요?'),
+                              const Text('아직 회원이 아니신가요?', style: TextStyle(color: Colors.white70),),
                               InkWell(
                                 child: Text(
                                   '회원가입',
-                                  style: TextStyle(color: Colors.lightBlue),
+                                  style: TextStyle(color: Colors.pink),
                                 ),
                                 onTap: () {
                                   _onSignUpButtonPressed();
@@ -155,11 +157,11 @@ class _LoginFormState extends State<LoginForm> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
-                              const Text('비밀번호를 잊으셨나요?'),
+                              const Text('비밀번호를 잊으셨나요?', style: TextStyle(color: Colors.white70),),
                               InkWell(
                                 child: Text(
                                   '비밀번호 찾기',
-                                  style: TextStyle(color: Colors.lightBlue),
+                                  style: TextStyle(color: Colors.pink),
                                 ),
                                 onTap: () {
                                   _onResetPasswordButtonPressed();
@@ -191,7 +193,7 @@ class _LoginFormState extends State<LoginForm> {
                               gradient: LinearGradient(
                                 begin: Alignment.topLeft,
                                 end: Alignment.bottomRight,
-                                colors: GradientColors.noontoDusk,
+                                colors: GradientColors.radish,
                               ),
                             ),
                             child: const Text(
@@ -213,7 +215,7 @@ class _LoginFormState extends State<LoginForm> {
                           'Or login with',
                           style: TextStyle(
                             fontSize: 14,
-                            color: Colors.black45,
+                            color: Colors.white70,
                           ),
                         ),
                       ),

@@ -5,7 +5,8 @@ InputDecoration textInputDecoration(String label, Icon icon, Color color){
 
   return InputDecoration(
     hintText: label,
-    fillColor: Colors.white70,
+    hintStyle: TextStyle(color: Colors.white70),
+    fillColor: Colors.transparent,
     filled: true,
     enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(30),
